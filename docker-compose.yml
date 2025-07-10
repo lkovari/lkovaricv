@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cv:
+    build: .
+    image: lkovari/lkcv
+    platform: linux/amd64
+    ports:
+      - "1965:80"
+    restart: unless-stopped
